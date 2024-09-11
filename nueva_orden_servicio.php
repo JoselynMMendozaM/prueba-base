@@ -240,7 +240,7 @@
             <div class="sidebar-footer">
                 <a href="#" class="sidebar-link">
                     <i class="lni lni-exit"></i>
-                    <span>Logout</span>
+                    <span>Cerrar Sesión</span>
                 </a>
             </div>
         </aside>
