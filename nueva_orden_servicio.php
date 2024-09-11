@@ -12,8 +12,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="<?= base_url('img/favicon.ico') ?>" type="image/x-icon">
     <style>
         * {
             margin: 0;
@@ -38,6 +40,14 @@
 
         li {
             list-style: none;
+        }
+
+        .titulo{
+            font-family: "Quantico", sans-serif;
+        }
+
+        .texto{
+            font-family: 'Comfortaa', sans-serif;
         }
 
         h1 {
@@ -249,7 +259,7 @@
                 <form action="#">
                     <div class="row">
                         <div class="col-4">
-                            <h1>
+                            <h1 class="titulo">
                                 Datos del Cliente
                             </h1>
                         </div>
@@ -257,7 +267,7 @@
                             <hr>
                         </div>
                     </div>
-                    <section class="form-fondo">
+                    <section class="form-fondo texto">
                         <div class="row pt-4">
                             <div class="col">
                                 <label for="txt_usuario" class="pb-3">Primer Nombre:</label>
@@ -298,7 +308,7 @@
                     </section>
                     <div class="row py-4">
                         <div class="col-4">
-                            <h1>
+                            <h1 class="titulo">
                                 Datos del Equipo
                             </h1>
                         </div>
@@ -306,7 +316,7 @@
                             <hr>
                         </div>
                     </div>
-                    <section class="form-fondo">
+                    <section class="form-fondo texto">
                         <div class="row pt-4">
                             <div class="col">
                                 <label for="txt_usuario" class="pb-3">Tipo de Equipo:</label>
