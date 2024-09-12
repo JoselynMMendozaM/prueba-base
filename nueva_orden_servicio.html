@@ -22,11 +22,14 @@
         }
        
         .form-fondo {
-            background-color: rgba(252, 252, 252, 0.404) ;       
+            color: #FFF;
+            font-weight: 400;
+            font-style: normal;
+            background-color: rgba(58, 14, 94, 0.568);
+            border: 2px solid rgba(214, 214, 214, 0.5);      
             padding: 30px;
-            border-radius: 40px;
-            backdrop-filter: blur(20px);
-            border: 2px solid rgba(255, 255, 255, 2);
+            border-radius: 20px;
+            backdrop-filter: blur(55px);
             box-shadow: 0 0 10px  rgba(0, 0, 0, .2);
           
         }
@@ -68,7 +71,9 @@
         }
 
         .main {
-            background-color: #b29fc4;
+            background-image: linear-gradient(to left, rgb(207, 207, 207), rgb(255, 255, 255));
+            color: hsl(0, 0%, 0%);                                 
+            text-shadow: 1px 2px 2px #000000;
             width: 100%;
             overflow: hidden;
             transition: all 0.35s ease-in-out;
@@ -79,8 +84,8 @@
             height: 100vh; 
             overflow-y: auto;
             position: sticky;
-            width: 70px;
-            min-width: 70px;
+            width: 80px;
+            min-width: 80px;
             z-index: 1000;
             transition: all .25s ease-in-out;
             background-color: #212122;
@@ -184,6 +189,15 @@
             transform: rotate(45deg);
             transition: all .2s ease-out;
         }
+
+        .icono-tamaño{
+            max-width: 45px;
+        }
+        .titulo-principal{
+            font-size: 2.5rem;
+        }
+
+        
         
         </style>
 
@@ -208,15 +222,15 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
-                        <i class="lni lni-agenda"></i>
-                        <span> Nueva Orden de Servicio</span>
+                    <a href="ordenes_servicio.html" class="sidebar-link">
+                        <i class="lni lni-popup"></i>
+                        <span>Ordenes de Servicio</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
-                        <i class="lni lni-popup"></i>
-                        <span>Ordenes de Servicio</span>
+                    <a href="3" class="sidebar-link">
+                        <i class="lni lni-agenda"></i>
+                        <span> Nueva Orden de Servicio</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
@@ -256,9 +270,9 @@
                 </a>
             </div>
         </aside>
-        <div class="main p-3">
+        <div class="main texto p-3">
             
-            <h1 class="titulo text-center py-5">
+            <h1 class="titulo titulo-principal text-center py-5">
                 NUEVA ORDEN DE SERVICIO
             </h1>
             
@@ -390,8 +404,22 @@
                             <hr>
                             
                         </section>
-                        
-    
+                        <section>
+                            <div class="d-flex flex-row-reverse bd-highlight">
+                                <div class="p-2 bd-highlight">
+                                    <a href="#"><img class="icono-tamaño" src="https://i.ibb.co/PDGXhYb/agregar-boton.png" alt="agregar-boton" border="0"></a>
+                                </div>
+                                <div class="p-2 bd-highlight"> 
+                                    <h1 class="pt-2">Agregar otro equipo</h1>
+                                </div>
+                                
+                              </div>
+                            
+                        </section>
+                        <div class="container">
+                            <a href="#" class="btn btn-warning btn-lg ">Guardar</a>
+
+                        </div>
                     </form>
     
                 </main>
